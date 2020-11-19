@@ -6,9 +6,6 @@ This application is used to generate a quality README. With the formatting alrea
 After cloning the repository, the user types "node index.js" in the terminal and fills out the questions
 
  
-
  
 
-<video width="320" height="240" controls>
-  <source src="assets/ReadMeGenDemo.mp4" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1CzMfU_zkhDyQAuG5xCTe1Ww2BlQxvjqj/preview" width="640" height="480"></iframe>
