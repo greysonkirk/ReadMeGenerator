@@ -10,5 +10,5 @@ After cloning the repository, the user types "node index.js" in the terminal and
  
 
 <video width="320" height="240" controls>
-  <source src="./assets/ReadMeGenDemo.mp4" type="video/mp4">
+  <source src="assets/ReadMeGenDemo.mp4" type="video/mp4">
 </video>
