@@ -41,18 +41,15 @@ inquirer
     ])
     .then((response) => {
         let readMeContent = `# ${response.name} 
-
-## Repository Link: ${response.repoLink} 
-## Application LinkL ${response.appLink}
+### Repository Link: ${response.repoLink} 
+### Application Link: ${response.appLink}
 
 ${response.purpose}
-
 ${response.use}
 
 ![](${response.ss1})
-
-![](${response.ss1})
-        `;
+![](${response.ss2})
+`;
 
 
 
