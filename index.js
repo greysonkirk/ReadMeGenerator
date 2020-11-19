@@ -4,51 +4,59 @@ const fs = require('fs');
 inquirer
     .prompt([{
             type: 'input',
-            message: 'What is your name?',
+            message: 'What is project title?',
             name: 'name',
         },
         {
             type: 'input',
-            message: 'Where are you from?',
-            name: 'location',
+            message: 'What is the repo link?',
+            name: 'repoLink',
         },
         {
             type: 'input',
-            message: 'Tell us about yourself:',
-            name: 'bio',
+            message: 'What is the app link?',
+            name: 'appLink',
         },
         {
             type: 'input',
-            message: 'What is your GitHub URL?',
-            name: 'GitHub',
+            message: 'What is the purpose of the app?',
+            name: 'purpose',
         },
         {
             type: 'input',
-            message: 'What is your LinkedIn URL?',
-            name: 'LinkedIn',
+            message: 'How does the user use the app?',
+            name: 'use',
+        },
+        {
+            type: 'input',
+            message: 'File path to screen shot:',
+            name: 'ss1',
+        },
+        {
+            type: 'input',
+            message: 'File path to second screen shot:',
+            name: 'ss2',
         }
 
     ])
     .then((response) => {
-        let htmlCode = `<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Activity 28</title>
-        </head>
-        <body>
-            <h2>${response.name}</h2>
-            <div>${response.location}</div>
-            <div>${response.bio}</div>
-            <div><a href="${response.LinkedIn}">LinkedIn</a></div>
-            <div><a href="${response.GitHub}">GitHub</a></div>
-        </body>
-        </html>`;
+        let readMeContent = `# ${response.name} 
+
+## Repository Link: ${response.repoLink} 
+## Application LinkL ${response.appLink}
+
+${response.purpose}
+
+${response.use}
+
+![](${response.ss1})
+
+![](${response.ss1})
+        `;
 
 
 
-        fs.writeFile('activity28.html', htmlCode, err => {
+        fs.writeFile('README.md', readMeContent, err => {
             if (err) throw err;
         });
     });
