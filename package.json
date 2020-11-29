@@ -1,0 +1,24 @@
+{
+  "name": "ReadMeGenerator",
+  "version": "1.0.0",
+  "description": "This application is used to generate a quality README. With the formatting already coded in, the user can fill out prompted questions and have an already formatted README.\r After cloning the repository, the user types \"node index.js\" in the terminal and fills out the questions",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greysonkirk/ReadMeGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greysonkirk/ReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/greysonkirk/ReadMeGenerator#readme"
+}
